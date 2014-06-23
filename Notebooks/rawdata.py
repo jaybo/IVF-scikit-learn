@@ -1,5 +1,11 @@
-#ID ,  Dose5,  Dose7,  Dose9,  Dose10,  Dose11,  E2Day5,  E2Day7,  E2Day9,  E2Day10,  E2Day11,  LT10D5,  L1D5,  L2D5,  L3D5,  L4D5,  L5D5,  LT10D7,  L1D7,  L2D7,  L3D7,  L4D7,  L5D7,  LT10D9,  L1D9,  L2D9,  L3D9,  L4D9,  L5D9,  Lt10D10,  L1D10,  L2D10,  L3D10,  L4D10,  L5D10,  Lt10D11,  L1D11,  L2D11,  L3D11,  L4D11,  L5D11,  HCGD9,  HCGD10,  HCGD11,  DownD7,  DownD9,  DownD10,  DownD11,  CancelD5,  CancelD7,  CancelD9,  CancelD10,  CancelD11
+#
+cols = "ID ,  Dose5,  Dose7,  Dose9,  Dose10,  Dose11,  E2Day5,  E2Day7,  E2Day9,  E2Day10,  E2Day11,  LT10D5,  L1D5,  L2D5,  L3D5,  L4D5,  L5D5,  LT10D7,  L1D7,  L2D7,  L3D7,  L4D7,  L5D7,  LT10D9,  L1D9,  L2D9,  L3D9,  L4D9,  L5D9,  Lt10D10,  L1D10,  L2D10,  L3D10,  L4D10,  L5D10,  Lt10D11,  L1D11,  L2D11,  L3D11,  L4D11,  L5D11,  HCGD9,  HCGD10,  HCGD11,  DownD7,  DownD9,  DownD10,  DownD11,  CancelD5,  CancelD7,  CancelD9,  CancelD10,  CancelD11"
+cols = cols.replace(' ', '').split(',')
+
 # 0  , 1     , 2     , 3     , 4      , 5      , 6      , 7      , 8      , 9       , 10      , 11     , 12   , 13   , 14   , 15   , 16   , 17     , 18   , 19   , 20   , 21   , 22   , 23     , 24   , 25   , 26   , 27   , 28   , 29      , 30    , 31    , 32    , 33    , 34    , 35      , 36    ,    37 ,     38,     39,     40,     41,     42 ,     43 ,     44 ,     45 ,     46  ,     47  ,     48   ,     49   ,     50   ,     51    ,     52     
+
+days = ["Day5", "Day7", "Day9", "Day10", "Day11"]
+
 import numpy as np
 rawdata = np.array(
 [  
